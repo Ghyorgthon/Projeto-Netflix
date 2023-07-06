@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins' ;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+.top{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#000000ce, #000000ce), url(../images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10px 8%; 
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 150px;
+}
+
+nav button{
+    border: none;
+    outline: none;
+    background: #cc1515;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+.lang{
+    background-color: transparent;
+    border: 1px solid #fff;
+
+}
+
+.buttons-top button a{
+    background: #cc1515;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .buttons-top img {
+   width: 10px;
+}
+
+.container{
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+    
+}
+
+.container h1{
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+.container h2{
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.container p{
+    font-size: 0.8em;
+    margin-bottom: 15px;
+}
+
+.container input{
+    padding: 0;
+    width: 450px;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+
+.container input::placeholder{
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.container button{
+    background-color: #df1111;
+    color: #fff;
+    font-size: 1.2em;
+    outline: none;
+    height: 50px;
+    width: 170px;
+    border: none;
+}
+
+.email-address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    box-shadow: 1px;
+    text-align: center;
+}
+
+.email-address input{
+    padding-left: 15px;
+    font-size: 12px;
+}
+
+
+.email-address button{
+    cursor: pointer;
+}
+
+/*Conteúdos*/
+
+.topic{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+.text-topic{
+    margin: 10px 8% ;
+}
+
+/*Questions*/
+
+.questions h1{
+    text-align: center;
+}
+
+.questions .container{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.faq{
+    margin: 60px auto 0px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.faq li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.faq li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #303030;
+    margin-bottom: 2px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+li label::after{
+    content: '+';
+    font-size: 18px;
+    transition: transform 0.5s;
+    
+}
+
+.cont-faq{
+    text-align: center;
+}
+
+
+input[type=radio]{
+    display: none;
+}
+
+.faq .cont-faq{
+    background-color: #303030;
+    text-align: left;
+    max-height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: max-height 0.3s, padding 0.3s;
+}
+
+.faq input[type='radio']:checked + label + .cont-faq{
+    max-height: 600px;
+    padding: 25px 15px;
+    
+    
+}
+
+.faq input[type='radio']:checked + label::after{
+    transform: rotate(136deg);
+}
+
+/*Rodapé*/
+
+footer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-top: 3px solid #303030;
+    
+}
+
+.footer-copy button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    text-align: left;
+    border: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    font-size: 12px;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.footer-copy button img{
+    width: 10px;
+    
+}
+
+.footer-copy .lang-ico{
+    filter: invert();
+    text-align: center;
+    width: 15px;
+    
+}
+
+.call{
+    display:flex;
+    margin: 15px 15px 180px 15px;
+    text-align: start;
+    color: #303030;
+
+
+}
+
+
+.col h3{
+    padding: 15px;
+    font-size: 14px;
+    color: #303030;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-copy{
+    margin: 10px;
+    display: block;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    border-radius: 4px;
+    color: #303030;
+    padding: 5px;
+    width: 75%;
+    height: 100%;
+}
+
+/*Tela de login*/
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login{
+    width: 450px;
+    height: 500px;
+    padding: 50px;
+    background-color: #000000d5;
+    font-size: 14px;
+    text-align: left;
+    border-radius:5px;
+    box-shadow: 0px 10px 40px -12px #000000b0;
+    
+}
+
+.card-login input{
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow:0px 10px 25px #00000056;
+    background-color: #303030;
+    color: #fff;
+    border: none;
+    outline: none;
+
+}
+.card-login .btn-login{
+    width: 100%;
+    background-color: #df1111;
+    color: #fff;
+    font-size: 1.2em;
+    outline: none;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.textfield label{
+    font-size: 2.1em;
+}
+
+.card-login p{
+    color: #474747;
+}
+.card-login span{
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-login span:hover{
+    text-decoration: underline;
+}
+
+.lembra input[type='checkbox']{
+    width: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.lembra{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    text-align: center;
+}
+.lembra p{
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+.lembra p:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.text-min{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+
